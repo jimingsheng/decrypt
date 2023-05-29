@@ -1,0 +1,19 @@
+server:
+  port: 10020
+
+logging:
+#  config: ../config/logback-spring.xml
+
+spring:
+  datasource:
+    url: jdbc:sqlite:E:/code/company/official-website/skyd-api/skyd-db.db
+    driver-class-name: org.sqlite.JDBC
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  global-config:
+    db-config:
+      update-strategy: IGNORED
